@@ -1,0 +1,6 @@
+framework module HYUIKitRuntimeUtils {
+  umbrella header "HYUIKitRuntimeUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

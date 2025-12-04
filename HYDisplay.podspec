@@ -8,35 +8,42 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HYDisplay'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of HYDisplay.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/li437277219@gmail.com/HYDisplay'
+  s.homepage         = 'https://github.com/huboceanLi/HYDisplay'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'li437277219@gmail.com' => 'li437277219@gmail.com' }
-  s.source           = { :git => 'https://github.com/li437277219@gmail.com/HYDisplay.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/huboceanLi/HYDisplay.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '14.0'
 
   s.source_files = 'HYDisplay/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'HYDisplay' => ['HYDisplay/Assets/*.png']
-  # }
+  s.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
+    
+  # 启用模块支持
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',           # 必须启用模块
+    'CLANG_ENABLE_MODULES' => 'YES',     # 启用模块
+    'CLANG_MODULES_AUTOLINK' => 'YES',   # 自动链接模块
+    'SWIFT_VERSION' => '5.0',            # Swift 版本
+    
+    # 桥接相关配置
+    'SWIFT_INSTALL_OBJC_HEADER' => 'YES',
+    'SWIFT_OBJC_INTERFACE_HEADER_NAME' => 'HYDisplay-Swift.h',
+  }
+  
+  s.dependency 'HYAsyncDisplayKit', '0.3.6'
+  s.dependency 'AppBundle', '0.0.1'
+  s.dependency 'HYSwiftSignalKit', '0.1.2'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.requires_arc = true
+  
 end

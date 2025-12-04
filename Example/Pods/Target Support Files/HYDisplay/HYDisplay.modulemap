@@ -1,0 +1,6 @@
+framework module HYDisplay {
+  umbrella header "HYDisplay-umbrella.h"
+
+  export *
+  module * { export * }
+}

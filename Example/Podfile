@@ -1,9 +1,12 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '14.0'
 
 target 'HYDisplay_Example' do
   pod 'HYDisplay', :path => '../'
+
+#  pod 'HYAsyncDisplayKit', '0.3.5'
+#  pod 'Display'
 
   target 'HYDisplay_Tests' do
     inherit! :search_paths

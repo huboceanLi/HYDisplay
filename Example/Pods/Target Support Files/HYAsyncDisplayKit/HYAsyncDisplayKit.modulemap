@@ -1,0 +1,6 @@
+framework module HYAsyncDisplayKit {
+  umbrella header "HYAsyncDisplayKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

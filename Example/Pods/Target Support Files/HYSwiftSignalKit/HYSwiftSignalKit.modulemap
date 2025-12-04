@@ -1,0 +1,6 @@
+framework module HYSwiftSignalKit {
+  umbrella header "HYSwiftSignalKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
