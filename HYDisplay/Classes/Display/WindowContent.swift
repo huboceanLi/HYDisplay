@@ -3,7 +3,7 @@ import UIKit
 import HYAsyncDisplayKit
 import HYSwiftSignalKit
 import HYUIKitRuntimeUtils
-import AppBundle
+import HYAppBundle
 
 private struct WindowLayout: Equatable {
     let size: CGSize

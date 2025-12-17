@@ -1,9 +1,9 @@
 PODS:
-  - AppBundle (0.0.1)
+  - HYAppBundle (0.1.2)
   - HYAsyncDisplayKit (0.3.6):
     - HYUIKitRuntimeUtils (= 1.0.4)
-  - HYDisplay (0.1.0):
-    - AppBundle (= 0.0.1)
+  - HYDisplay (0.1.3):
+    - HYAppBundle (= 0.1.2)
     - HYAsyncDisplayKit (= 0.3.6)
     - HYSwiftSignalKit (= 0.1.2)
   - HYSwiftSignalKit (0.1.2)
@@ -14,7 +14,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AppBundle
+    - HYAppBundle
     - HYAsyncDisplayKit
     - HYSwiftSignalKit
     - HYUIKitRuntimeUtils
@@ -24,9 +24,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppBundle: 60e63ab7611d11d49194f30bb9ee96ed45fbadd9
+  HYAppBundle: 940ed223c3d3c1a5bc33e02ac6c31718ebdc9b31
   HYAsyncDisplayKit: 483a5769fe4aedd4937f6a4ca838319f6f508fcb
-  HYDisplay: 3fbe2dde3d53c523e8056605a40f8c8c0ab3feb1
+  HYDisplay: ec7e1e0f0ea4a836afce59928f6868d8f8903f0b
   HYSwiftSignalKit: b258ef7f9d44aa9af100686bb85764c903916408
   HYUIKitRuntimeUtils: b5d2e746a737ae4f35e204587dad6b3107ece1c3
 

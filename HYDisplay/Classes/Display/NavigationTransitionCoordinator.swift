@@ -1,5 +1,5 @@
 import UIKit
-import AppBundle
+import HYAppBundle
 import HYAsyncDisplayKit
 
 enum NavigationTransition {

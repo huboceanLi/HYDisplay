@@ -1,7 +1,7 @@
 import UIKit
 import HYAsyncDisplayKit
 import HYSwiftSignalKit
-import AppBundle
+import HYAppBundle
 import HYUIKitRuntimeUtils
 
 private var backArrowImageCache: [Int32: UIImage] = [:]

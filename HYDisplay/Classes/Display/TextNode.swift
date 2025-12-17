@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import HYAsyncDisplayKit
 import CoreText
-import AppBundle
+import HYAppBundle
 
 private let defaultFont = UIFont.systemFont(ofSize: 15.0)
 

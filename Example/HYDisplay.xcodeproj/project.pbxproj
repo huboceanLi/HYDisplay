@@ -60,7 +60,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6BC836E5F4D511203F862CB8 /* HYDisplay.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HYDisplay.podspec; path = ../HYDisplay.podspec; sourceTree = "<group>"; };
+		6BC836E5F4D511203F862CB8 /* HYDisplay.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HYDisplay.podspec; path = ../HYDisplay.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82062B57ED8F0E30A0E71618 /* Pods-HYDisplay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDisplay_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HYDisplay_Tests/Pods-HYDisplay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -355,7 +355,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HYDisplay_Example/Pods-HYDisplay_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AppBundle/AppBundle.framework",
+				"${BUILT_PRODUCTS_DIR}/HYAppBundle/HYAppBundle.framework",
 				"${BUILT_PRODUCTS_DIR}/HYAsyncDisplayKit/HYAsyncDisplayKit.framework",
 				"${BUILT_PRODUCTS_DIR}/HYDisplay/HYDisplay.framework",
 				"${BUILT_PRODUCTS_DIR}/HYSwiftSignalKit/HYSwiftSignalKit.framework",
@@ -363,7 +363,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppBundle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYAppBundle.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYAsyncDisplayKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYDisplay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYSwiftSignalKit.framework",

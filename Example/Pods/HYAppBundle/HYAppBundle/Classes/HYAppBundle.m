@@ -1,4 +1,4 @@
-#import <AppBundle/AppBundle.h>
+#import "HYAppBundle.h"
 
 NSBundle * _Nonnull getAppBundle() {
     NSBundle *bundle = [NSBundle mainBundle];
@@ -8,11 +8,15 @@ NSBundle * _Nonnull getAppBundle() {
         bundle = [NSBundle bundleWithURL:[[bundle.bundleURL URLByDeletingLastPathComponent] URLByDeletingLastPathComponent]];
     } else if ([[bundle.bundleURL pathExtension] isEqualToString:@"Frameworks"]) {
         bundle = [NSBundle bundleWithURL:[bundle.bundleURL URLByDeletingLastPathComponent]];
+    } else {
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"DrawingUIBundle" ofType:@"bundle"];
+        bundle = [NSBundle bundleWithPath:bundlePath];
     }
+
     return bundle;
 }
 
-@implementation UIImage (AppBundle)
+@implementation UIImage (HYAppBundle)
 
 - (instancetype _Nullable)initWithBundleImageName:(NSString * _Nonnull)bundleImageName {
     return [UIImage imageNamed:bundleImageName inBundle:getAppBundle() compatibleWithTraitCollection:nil];

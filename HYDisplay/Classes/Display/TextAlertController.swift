@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 import HYAsyncDisplayKit
-import AppBundle
+import HYAppBundle
 //import Markdown
 
 private let alertWidth: CGFloat = 270.0

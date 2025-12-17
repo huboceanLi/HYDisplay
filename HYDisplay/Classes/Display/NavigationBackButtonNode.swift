@@ -1,6 +1,6 @@
 import UIKit
 import HYAsyncDisplayKit
-import AppBundle
+import HYAppBundle
 
 public class NavigationBackButtonNode: ASControlNode {
     private func fontForCurrentState() -> UIFont {

@@ -3,7 +3,7 @@
 
 NSBundle * _Nonnull getAppBundle(void);
 
-@interface UIImage (AppBundle)
+@interface UIImage (HYAppBundle)
 
 - (instancetype _Nullable)initWithBundleImageName:(NSString * _Nonnull)bundleImageName;
 

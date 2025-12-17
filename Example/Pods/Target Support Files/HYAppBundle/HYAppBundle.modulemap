@@ -1,0 +1,6 @@
+framework module HYAppBundle {
+  umbrella header "HYAppBundle-umbrella.h"
+
+  export *
+  module * { export * }
+}

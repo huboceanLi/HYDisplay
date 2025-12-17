@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "AppBundle.h"
+#import "HYAppBundle.h"
 
-FOUNDATION_EXPORT double AppBundleVersionNumber;
-FOUNDATION_EXPORT const unsigned char AppBundleVersionString[];
+FOUNDATION_EXPORT double HYAppBundleVersionNumber;
+FOUNDATION_EXPORT const unsigned char HYAppBundleVersionString[];
 
