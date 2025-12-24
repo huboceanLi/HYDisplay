@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HYDisplay'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'A short description of HYDisplay.'
 
   s.description      = <<-DESC
@@ -40,7 +40,7 @@ Add long description of the pod here.
     'SWIFT_OBJC_INTERFACE_HEADER_NAME' => 'HYDisplay-Swift.h',
   }
   
-  s.dependency 'HYAsyncDisplayKit', '0.3.6'
+  s.dependency 'HYAsyncDisplayKit', '0.3.7'
   s.dependency 'HYAppBundle', '0.1.3'
   s.dependency 'HYSwiftSignalKit', '0.1.2'
 
