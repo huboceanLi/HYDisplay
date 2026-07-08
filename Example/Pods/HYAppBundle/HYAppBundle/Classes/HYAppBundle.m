@@ -16,6 +16,15 @@ NSBundle * _Nonnull getAppBundle() {
     return bundle;
 }
 
+UIImage * _Nullable HYBundleImageName(NSString * _Nullable name) {
+    
+    UIImage *image = [UIImage imageNamed:name inBundle:getAppBundle() compatibleWithTraitCollection:nil];
+    if (image == nil) {
+        return nil;
+    }
+    return image;
+}
+
 @implementation UIImage (HYAppBundle)
 
 - (instancetype _Nullable)initWithBundleImageName:(NSString * _Nonnull)bundleImageName {

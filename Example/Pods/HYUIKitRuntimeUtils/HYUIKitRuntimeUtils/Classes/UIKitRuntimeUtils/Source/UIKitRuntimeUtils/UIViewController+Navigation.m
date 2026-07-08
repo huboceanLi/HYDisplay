@@ -251,9 +251,9 @@ static void registerEffectViewOverrides(void) {
         
         [RuntimeUtils swizzleInstanceMethodOfClass:[UIFocusSystem class] currentSelector:@selector(updateFocusIfNeeded) newSelector:@selector(_65087dc8_updateFocusIfNeeded)];
         
-        if (@available(iOS 26.0, *)) {
-            registerEffectViewOverrides();
-        }
+//        if (@available(iOS 26.0, *)) {
+//            registerEffectViewOverrides();
+//        }
     });
 }
 
